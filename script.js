@@ -40,7 +40,7 @@ function rot13(encodedStr) {
     for (let j = 0; j < word.length; j++) {
       var char = word.charAt(j);
       var decoded_char = lookup[char];
-      decoded_word += decoded_char;
+      decoded_word = decoded_word + decoded_char;
     }
     decodedArr.push(decoded_word);
   }
